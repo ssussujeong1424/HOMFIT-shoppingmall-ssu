@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMFIT 쇼핑몰 - 취업용 포트폴리오</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <!-- head 태그에 들어갈 seo(검색최적화) 코드 -->
+    <meta name="description"
+        content="HOMFIT은 1인 가구의 라이프스타일에 맞춘 가구와 홈·리빙 제품을 제안합니다. 거실, 침실, 주방, 패브릭부터 감각적인 데코 아이템까지 나에게 꼭 맞는 공간을 완성해보세요.">
+    <meta name="keywords" content="HOMFIT, 홈핏, 가구 쇼핑몰, 홈리빙, 1인 가구, 인테리어, 리빙, 가구, 소파, 테이블, 침실가구, 주방용품, 패브릭, 홈데코">
+    <meta name="author" content="HOMFIT">
+    <meta name="robots" content="index, follow">
+    <!-- 대표 URL -->
+    <link rel="canonical" href="https://www.도메인주소(나중에 도메인 사서 수정).com/">
+    <!-- Open Graph : 카카오톡, 네이버, 페이스북 등 공유 -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="HOMFIT">
+    <meta property="og:title" content="HOMFIT | 나에게 꼭 맞는 따뜻한 홈·리빙">
+    <meta property="og:description" content="실용적이면서도 따뜻한 공간을 위한 홈·리빙 브랜드 HOMFIT. 나의 생활과 공간에 꼭 맞는 가구와 리빙 아이템을 만나보세요.">
+    <meta property="og:url" content="https://www.도메인주소.com">
+    <meta property="og:image" content="https://www.도메인주소.com/img/hero-pc.jpg">
+    <meta property="og:locale" content="ko_KR">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+
+
+    <link rel="stylesheet" href="./css/product.css">
+    <script src="./js/header.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/new-product.js"></script>
+    <script src="./js/product-ui.js" defer></script>
+    <script src="./js/parameter.js"></script>
+    <script src="./js/won.js"></script>
+    <script src="./js/review.js"></script>
+    <script src="./js/review-control.js" defer></script>
+           <!-- 공통 header / footer 파일 연결 -->
+     <script src="./js/include.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <script>
+        const productInfo = newProductArray.find(function(item){
+            return item.pid === Number(getParameter('pid'))
+        })
+
+        const reviewInfo=reviewArray.filter(function(item){
+            return item.pid === Number(getParameter('pid'))
+        })
+
+        console.log(reviewInfo)
+    </script>
+
+    <div id="header-wrap">
+        <!-- header.html 파일에 내용이 들어오는 영역 -->
+    </div>
+
+
+    <main>
+
+        <section class="info-product">
+            <div class="common-frame">
+                <div class="product-img">
+                    <figure class="thumbnail-big">
+                        <img src="./img/big-thumnail.jpg" alt="내추럴 우드 3단 책장 800 내추럴오크(조립형)">
+                    </figure>
+
+                    <script>
+                        document.querySelector('.thumbnail-big').innerHTML=`<img src="./img/${productInfo.pthumbFileName}" alt="${productInfo.pname}">`
+                    </script>
+
+
+                    <div class="horizontal-scroll-gallery">
+                        <div class="train-horizontal">
+                            <figure><img src="./img/small-thumbnail-1.jpg" alt="내추럴 우드 3단 책장 800 내추럴오크(조립형) 1번 사진">
+                            </figure>
+                            <figure><img src="./img/small-thumbnail-2.jpg" alt="내추럴 우드 3단 책장 800 내추럴오크(조립형) 2번 사진">
+                            </figure>
+                            <figure><img src="./img/small-thumbnail-3.jpg" alt="내추럴 우드 3단 책장 800 내추럴오크(조립형) 3번 사진">
+                            </figure>
+                            <figure><img src="./img/small-thumbnail-4.jpg" alt="내추럴 우드 3단 책장 800 내추럴오크(조립형) 4번 사진">
+                            </figure>
+                            <figure><img src="./img/small-thumbnail-5.jpg" alt="내추럴 우드 3단 책장 800 내추럴오크(조립형) 5번 사진">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-txt">
+                    <div class="product-name">
+                        <span class="category-badge">NEW</span>
+                        <div class="product-title">[홈핏] 내추럴 우드 3단 책장 800 내추럴오크 (조립형)</div>
+                    </div>
+                    <div class="pay-frame product-pay">
+                        <div class="pay-original">
+                            <span>249,000</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">28%</div>
+                            <div class="pay"><b>179,000</b>원</div>
+                        </div>
+                    </div>
+                    <div class="benefits">
+
+                        <dl class="benefit str">
+                            <dt>회원혜택</dt>
+                            <dd>
+                                <ul class="benefit-list">
+                                    <li>
+                                        <span>상품 할인</span>
+                                        <div class="price-benefit">
+                                            <span><b>179,000</b>원 <i>28%</i></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>장바구니 할인</span>
+                                        <div class="price-benefit">
+                                            <span><b>168,260</b>원 <i>6%</i></span>
+                                            <p class="tip-benefit">주문서 작성 시 가격 적용됩니다.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <a href="#" class="btn-coupon">
+                                    전체 쿠폰 받기
+                                    <img src="./img/icon-download.svg" alt="쿠폰 받기">
+                                </a>
+                            </dd>
+                        </dl>
+
+                        <dl class="benefit">
+                            <dt>추가혜택</dt>
+                            <dd>
+                                <ul class="benefit-list">
+                                    <li>
+                                        <span>무이자할부</span>
+                                        <div class="desc-benefit">
+                                            할부금 월 29,834원 (최대 6개월)
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>카드</span>
+                                        <div class="desc-benefit">
+                                            삼성카드 169,000원 (10,000원 즉시할인)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <a href="#" class="btn-link">
+                                    더보기
+                                </a>
+                            </dd>
+                        </dl>
+
+                        <dl class="benefit">
+                            <dt>포인트</dt>
+                            <dd>
+                                <ul class="benefit-list">
+                                    <li>
+                                        <span>HOMFIT Point</span>
+                                        <div>
+                                            179P (0.1%) 적립 예정
+                                            <p class="tip-benefit">홈핏 멤버스 회원 시 적립 가능합니다.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <a href="#" class="btn-link">
+                                    더보기
+                                </a>
+                            </dd>
+                        </dl>
+
+                        <dl class="benefit">
+                            <dt>배송정보</dt>
+                            <dd>
+                                <p class="delivery-info">무료(전국) / 내일 출발, 오전 주문 시</p>
+                            </dd>
+                            <dd>
+                                <a href="#" class="btn-link">
+                                    자세히보기
+                                </a>
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <div class="pay-info">
+                        총 합계금액<b>179,000</b>원
+                        <p class="tip-info">※ 회원 혜택가는 로그인 후, 주문서 작성시 적용 가능합니다.</p>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn-cart">장바구니</a>
+                        <a href="#" class="btn-buy">구매하기</a>
+                    </div>
+                </div>
+                <script>
+                        document.querySelector('.product-txt').innerHTML=`<div class="product-name">
+                        <span class="category-badge">NEW</span>
+                        <div class="product-title">${productInfo.pname}</div>
+                    </div>
+                    <div class="pay-frame product-pay">
+                        ${productInfo.pdiscount?` <div class="pay-original">
+                            <span>${won(productInfo.price)}</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">${productInfo.pdiscount*100}%</div>
+                            <div class="pay"><b>${won(productInfo.price*(1-productInfo.pdiscount))}</b>원</div>
+                        </div>`:`
+                        <div class="pay-discount">
+                            <div class="pay"><b>${won(productInfo.price*(1-productInfo.pdiscount))}</b>원</div>
+                        </div>`}
+                       
+                    </div>
+                    <div class="benefits">
+
+                        <dl class="benefit str">
+                            <dt>회원혜택</dt>
+                            <dd>
+                                <ul class="benefit-list">
+                                    <li>
+                                        <span>상품 할인</span>
+                                        <div class="price-benefit">
+                                            <span><b>179,000</b>원 <i>28%</i></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>장바구니 할인</span>
+                                        <div class="price-benefit">
+                                            <span><b>168,260</b>원 <i>6%</i></span>
+                                            <p class="tip-benefit">주문서 작성 시 가격 적용됩니다.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <a href="#" class="btn-coupon">
+                                    전체 쿠폰 받기
+                                    <img src="./img/icon-download.svg" alt="쿠폰 받기">
+                                </a>
+                            </dd>
+                        </dl>
+
+                        <dl class="benefit">
+                            <dt>추가혜택</dt>
+                            <dd>
+                                <ul class="benefit-list">
+                                    <li>
+                                        <span>무이자할부</span>
+                                        <div class="desc-benefit">
+                                            할부금 월 29,834원 (최대 6개월)
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>카드</span>
+                                        <div class="desc-benefit">
+                                            삼성카드 169,000원 (10,000원 즉시할인)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <a href="#" class="btn-link">
+                                    더보기
+                                </a>
+                            </dd>
+                        </dl>
+
+                        <dl class="benefit">
+                            <dt>포인트</dt>
+                            <dd>
+                                <ul class="benefit-list">
+                                    <li>
+                                        <span>HOMFIT Point</span>
+                                        <div>
+                                            179P (0.1%) 적립 예정
+                                            <p class="tip-benefit">홈핏 멤버스 회원 시 적립 가능합니다.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <a href="#" class="btn-link">
+                                    더보기
+                                </a>
+                            </dd>
+                        </dl>
+
+                        <dl class="benefit">
+                            <dt>배송정보</dt>
+                            <dd>
+                                <p class="delivery-info">무료(전국) / 내일 출발, 오전 주문 시</p>
+                            </dd>
+                            <dd>
+                                <a href="#" class="btn-link">
+                                    자세히보기
+                                </a>
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <div class="pay-info">
+                        총 합계금액<b>${won(productInfo.price*(1-productInfo.pdiscount))}</b>원
+                        <p class="tip-info">※ 회원 혜택가는 로그인 후, 주문서 작성시 적용 가능합니다.</p>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn-cart">장바구니</a>
+                        <a href="#" class="btn-buy">구매하기</a>
+                    </div>`
+                </script>
+            </div>
+        </section>
+
+        <section class="product-detail-info">
+            <div class="common-frame">
+                <ul class="sticky-product-menu">
+                    <li><a href="#product-detail-1" class="on">상품정보</a></li>
+                    <li><a href="#product-detail-2">상품리뷰</a></li>
+                    <li><a href="#product-detail-3">배송&middot;반품&middot;교환 안내</a></li>
+                </ul>
+                <div id="product-detail-1">
+                    <img src="./img/detailCut.jpg" alt="상세페이지">
+                </div>
+                <div id="product-detail-2">
+                    <h2>상품 리뷰</h2>
+                    <ul class="review">
+                        <li>
+                            <div class="review-user">
+                                <span class="rev-name">배*정</span>
+                                <span class="rev-date">2026.09.16</span>
+                            </div>
+                            <div class="review-content">
+                                <div class="stars">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                </div>
+                                <div class="review-txt fold">
+                                    <p>너무나 이쁜 우드색입니다!!!!!!진짜 우드 가구 덕후엄마인데 제가 좋아하는 색상을 가지고 있네요 배송은 좀 늦어졌지만 친절하시고
+                                        좋았습니다~시간도 딱 지켜주셨어요~한개 사보고 또 살려고 했는데 두개 바로 살걸 후회했습니다 ㅎ기사님께서 또 사시면되죠~그때 두개 연결하세요
+                                        하시더라구요 ㅎㅎ우선 위치가 랜덤이여서 거실에 뒀어요~
+                                    </p>
+                                    <button class="btn-rvtxt">더보기<img src="./img/icon-more.svg" alt="더보기 아이콘"></button>
+                                </div>
+                                <div class="review-img">
+                                    <ul class="review-gallery">
+                                        <li><img src="./img/reivew/rev1.jpg" alt="리뷰이미지1"></li>
+                                        <li><img src="./img/reivew/rev2.jpg" alt="리뷰이미지2"></li>
+                                        <li><img src="./img/reivew/rev3.jpg" alt="리뷰이미지3"></li>
+                                        <li><img src="./img/reivew/rev4.jpg" alt="리뷰이미지4"></li>
+                                        <li><img src="./img/reivew/rev5.jpg" alt="리뷰이미지5"></li>
+                                        <li><img src="./img/reivew/rev6.jpg" alt="리뷰이미지6"></li>
+                                    </ul>
+                                </div>
+                                <div class="review-etc">
+                                    <a href="#"><img src="./img/icon-good.svg" alt="유용해요">유용해요</a>
+                                    <a href="#"><img src="./img/icon-bad.svg" alt="신고차단">신고차단</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="review-user">
+                                <span class="rev-name">배*정</span>
+                                <span class="rev-date">2026.09.16</span>
+                            </div>
+                            <div class="review-content">
+                                <div class="stars">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                </div>
+                                <div class="review-txt fold">
+                                    <p>너무나 이쁜 우드색입니다!!!!!!진짜 우드 가구 덕후엄마인데 제가 좋아하는 색상을 가지고 있네요 배송은 좀 늦어졌지만 친절하시고
+                                        좋았습니다~시간도 딱 지켜주셨어요~한개 사보고 또 살려고 했는데 두개 바로 살걸 후회했습니다 ㅎ기사님께서 또 사시면되죠~그때 두개 연결하세요
+                                        하시더라구요 ㅎㅎ우선 위치가 랜덤이여서 거실에 뒀어요~
+                                    </p>
+                                    <button class="btn-rvtxt">더보기<img src="./img/icon-more.svg" alt="더보기 아이콘"></button>
+                                </div>
+                                <div class="review-img">
+                                    <ul class="review-gallery">
+                                        <li><img src="./img/rev1.jpg" alt="리뷰이미지1"></li>
+                                        <li><img src="./img/rev2.jpg" alt="리뷰이미지2"></li>
+                                        <li><img src="./img/rev3.jpg" alt="리뷰이미지3"></li>
+                                        <li><img src="./img/rev4.jpg" alt="리뷰이미지4"></li>
+                                        <li><img src="./img/rev5.jpg" alt="리뷰이미지5"></li>
+                                        <li><img src="./img/rev6.jpg" alt="리뷰이미지6"></li>
+                                    </ul>
+                                </div>
+                                <div class="review-etc">
+                                    <a href="#"><img src="./img/icon-good.svg" alt="유용해요">유용해요</a>
+                                    <a href="#"><img src="./img/icon-bad.svg" alt="신고차단">신고차단</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="review-user">
+                                <span class="rev-name">배*정</span>
+                                <span class="rev-date">2026.09.16</span>
+                            </div>
+                            <div class="review-content">
+                                <div class="stars">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                </div>
+                                <div class="review-txt fold">
+                                    <p>너무나 이쁜 우드색입니다!!!!!!진짜 우드 가구 덕후엄마인데 제가 좋아하는 색상을 가지고 있네요 배송은 좀 늦어졌지만 친절하시고
+                                        좋았습니다~시간도 딱 지켜주셨어요~한개 사보고 또 살려고 했는데 두개 바로 살걸 후회했습니다 ㅎ기사님께서 또 사시면되죠~그때 두개 연결하세요
+                                        하시더라구요 ㅎㅎ우선 위치가 랜덤이여서 거실에 뒀어요~
+                                    </p>
+                                    <button class="btn-rvtxt">더보기<img src="./img/icon-more.svg" alt="더보기 아이콘"></button>
+                                </div>
+                                <div class="review-img">
+                                    <ul class="review-gallery">
+                                        <li><img src="./img/review1.jpg" alt="리뷰이미지1"></li>
+                                        <li><img src="./img/review2.jpg" alt="리뷰이미지2"></li>
+                                        <li><img src="./img/review3.jpg" alt="리뷰이미지3"></li>
+                                        <li><img src="./img/review4.jpg" alt="리뷰이미지4"></li>
+                                        <li><img src="./img/review5.jpg" alt="리뷰이미지5"></li>
+                                        <li><img src="./img/review6.jpg" alt="리뷰이미지6"></li>
+                                    </ul>
+                                </div>
+                                <div class="review-etc">
+                                    <a href="#"><img src="./img/icon-good.svg" alt="유용해요">유용해요</a>
+                                    <a href="#"><img src="./img/icon-bad.svg" alt="신고차단">신고차단</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="review-user">
+                                <span class="rev-name">배*정</span>
+                                <span class="rev-date">2026.09.16</span>
+                            </div>
+                            <div class="review-content">
+                                <div class="stars">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                </div>
+                                <div class="review-txt fold">
+                                    <p>너무나 이쁜 우드색입니다!!!!!!진짜 우드 가구 덕후엄마인데 제가 좋아하는 색상을 가지고 있네요 배송은 좀 늦어졌지만 친절하시고
+                                        좋았습니다~시간도 딱 지켜주셨어요~한개 사보고 또 살려고 했는데 두개 바로 살걸 후회했습니다 ㅎ기사님께서 또 사시면되죠~그때 두개 연결하세요
+                                        하시더라구요 ㅎㅎ우선 위치가 랜덤이여서 거실에 뒀어요~
+                                    </p>
+                                    <button class="btn-rvtxt">더보기<img src="./img/icon-more.svg" alt="더보기 아이콘"></button>
+                                </div>
+                                <div class="review-img">
+                                    <ul class="review-gallery">
+                                        <li><img src="./img/review1.jpg" alt="리뷰이미지1"></li>
+                                        <li><img src="./img/review2.jpg" alt="리뷰이미지2"></li>
+                                        <li><img src="./img/review3.jpg" alt="리뷰이미지3"></li>
+                                        <li><img src="./img/review4.jpg" alt="리뷰이미지4"></li>
+                                        <li><img src="./img/review5.jpg" alt="리뷰이미지5"></li>
+                                        <li><img src="./img/review6.jpg" alt="리뷰이미지6"></li>
+                                    </ul>
+                                </div>
+                                <div class="review-etc">
+                                    <a href="#"><img src="./img/icon-good.svg" alt="유용해요">유용해요</a>
+                                    <a href="#"><img src="./img/icon-bad.svg" alt="신고차단">신고차단</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="review-user">
+                                <span class="rev-name">배*정</span>
+                                <span class="rev-date">2026.09.16</span>
+                            </div>
+                            <div class="review-content">
+                                <div class="stars">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                </div>
+                                <div class="review-txt fold">
+                                    <p>너무나 이쁜 우드색입니다!!!!!!진짜 우드 가구 덕후엄마인데 제가 좋아하는 색상을 가지고 있네요 배송은 좀 늦어졌지만 친절하시고
+                                        좋았습니다~시간도 딱 지켜주셨어요~한개 사보고 또 살려고 했는데 두개 바로 살걸 후회했습니다 ㅎ기사님께서 또 사시면되죠~그때 두개 연결하세요
+                                        하시더라구요 ㅎㅎ우선 위치가 랜덤이여서 거실에 뒀어요~
+                                    </p>
+                                    <button class="btn-rvtxt">더보기<img src="./img/icon-more.svg" alt="더보기 아이콘"></button>
+                                </div>
+                                <div class="review-img">
+                                    <ul class="review-gallery">
+                                        <li><img src="./img/review1.jpg" alt="리뷰이미지1"></li>
+                                        <li><img src="./img/review2.jpg" alt="리뷰이미지2"></li>
+                                        <li><img src="./img/review3.jpg" alt="리뷰이미지3"></li>
+                                        <li><img src="./img/review4.jpg" alt="리뷰이미지4"></li>
+                                        <li><img src="./img/review5.jpg" alt="리뷰이미지5"></li>
+                                        <li><img src="./img/review6.jpg" alt="리뷰이미지6"></li>
+                                    </ul>
+                                </div>
+                                <div class="review-etc">
+                                    <a href="#"><img src="./img/icon-good.svg" alt="유용해요">유용해요</a>
+                                    <a href="#"><img src="./img/icon-bad.svg" alt="신고차단">신고차단</a>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+
+                    </ul>
+                </div>
+                <div id="product-detail-3">
+                    <h2>배송 반품 교환 안내</h2>
+                    <table class="product-table">
+                        <tr>
+                            <th>배송유형</th>
+                            <td>HOMFIT 직접배송</td>
+                        </tr>
+                        <tr>
+                            <th>배송료</th>
+                            <td>
+                                <ul class="product-del-table-list">
+                                    <li>기본 배송비: 무료</li>
+                                    <li>제주 지역 배송비 안내: 제주도민-무료/ 제주도민이 아닌 고객이 제주도로 배송 요청시: 배송비가 결제 금액에 따라 부과</li>
+                                    <li>상세 배송비는 결제 화면에서 확인하실 수 있습니다.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>배송기간</th>
+                            <td>설치제품, 가구제품: 배송기간은 주문 후 4~5일 정도 소요 됩니다. 결제 후 SMS, 알림톡 또는 유선을 통해 배송일을 안내 드립니다.
+                                단, 주문의 폭주로 인한 택배지연, 수입지연, 천재지변 등의 경우가 발생되었을 때, 배송이 지연될 수 있으며 이러한 경우 사전에 고객께 SMS, 메일, 혹은
+                                유선을 통한 연락으로 배송지연을 안내드리며 상담을 통해 배송일을 재조정 하실 수 있습니다.
+                                가구 외 제품: 주문 후 4~10일 정도 소요 됩니다.</td>
+                        </tr>
+                        <tr>
+                            <th>배송일 및 배송지 변경</th>
+                            <td>배송일 3일 전까지 변경이 가능합니다. (내일배송을 선택하신 경우, 주문 당일 13시까지만 변경 가능)
+                                변경을 원하시는 고객님께서는 리바트몰 고객센터 또는 고객상담실(1577-3332)을 이용해주시기 바랍니다.</td>
+                        </tr>
+                        <tr>
+                            <th>배송 불가 지역</th>
+                            <td>도서산간 지역의 경우 배송이 불가할 수 있습니다. (제주도는 배송 가능하며, 별도 배송비가 부과됩니다.)</td>
+                        </tr>
+                        <tr>
+                            <th>유의사항</th>
+                            <td>
+                                <ul class="product-del-table-list">
+                                    <li>
+                                        현장 상황에 따른 추가 장비 사용 시 고객님 부담 비용이 발생될 수 있습니다. <a href="#">내용 더 보기</a>
+                                        <p class="del-desc">(사다리차 비용, 엘리베이터 사용료, 지게차 사용료 등 / 입구 협소 등의 이유로 발생)<br>
+                                            ※ 총 결제금액 300만 원 이상인 경우, 사다리차 필요시 전액 무상 지원됩니다.</p>
+                                    </li>
+                                    <li>
+                                        엘리베이터나 사다리차 사용이 불가한 현장 상황으로 엔지니어가 직접 제품을 들고 운반할 경우 비용이 추가 부과될 수 있습니다. <a
+                                            href="#">내용 더 보기</a>
+                                    </li>
+                                    <li>
+                                        원활한 설치작업 진행을 위해 설치작업 공간 확보 부탁드립니다.(3m * 3m)
+                                    </li>
+                                    <li>
+                                        설치될 공간에 기존 사용 제품이 위치한 경우 배송 전 미리 정리를 부탁드립니다. 설치 지연 및 추가 비용이 발생될 수 있습니다.
+                                    </li>
+                                    <li>
+                                        기존에 사용하시던 상품에 추가 설치가 필요한 상품을 구매하실 경우, 현장 추가 작업비용이 발생할 수 있습니다.<a href="#">내용 더
+                                            보기</a><br>
+                                        <p class="del-desc">자세한 내용은 고객상담실(1577-3332)로 문의 부탁드립니다.</p>
+                                    </li>
+                                    <li>
+                                        배송지가 다른 경우 주문 분리가 불가하오니 주소별 개별 주문해 주시기 바랍니다.
+                                    </li>
+                                    <li>
+                                        보다 신속한 배송 서비스 제공을 위해 일부 지역에서는 요일별 배송제를 시행하고 있습니다. <a href="#">내용 더 보기</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+<div class="footer-wrap">
+    <!-- footer.html 파일의 내용이 들어오는 영역 -->
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMFIT 쇼핑몰 - 취업용 포트폴리오</title>
+
+    <!-- head 태그에 들어갈 seo(검색최적화) 코드 -->
+    <meta name="description"
+        content="HOMFIT은 1인 가구의 라이프스타일에 맞춘 가구와 홈·리빙 제품을 제안합니다. 거실, 침실, 주방, 패브릭부터 감각적인 데코 아이템까지 나에게 꼭 맞는 공간을 완성해보세요.">
+    <meta name="keywords" content="HOMFIT, 홈핏, 가구 쇼핑몰, 홈리빙, 1인 가구, 인테리어, 리빙, 가구, 소파, 테이블, 침실가구, 주방용품, 패브릭, 홈데코">
+    <meta name="author" content="HOMFIT">
+    <meta name="robots" content="index, follow">
+    <!-- 대표 URL -->
+    <link rel="canonical" href="https://www.도메인주소(나중에 도메인 사서 수정).com/">
+    <!-- Open Graph : 카카오톡, 네이버, 페이스북 등 공유 -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="HOMFIT">
+    <meta property="og:title" content="HOMFIT | 나에게 꼭 맞는 따뜻한 홈·리빙">
+    <meta property="og:description" content="실용적이면서도 따뜻한 공간을 위한 홈·리빙 브랜드 HOMFIT. 나의 생활과 공간에 꼭 맞는 가구와 리빙 아이템을 만나보세요.">
+    <meta property="og:url" content="https://www.도메인주소.com">
+    <meta property="og:image" content="https://www.도메인주소.com/img/hero-pc.jpg">
+    <meta property="og:locale" content="ko_KR">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+
+
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css?ver=001">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/header.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 제품 정보 -->
+    <script src="./js/product.js"></script>
+    <script src="./js/product-control.js" defer></script>
+    <!-- 공통 header / footer 파일 연결 -->
+     <script src="./js/include.js" defer></script>
+</head>
+
+<body>
+    <div id="header-wrap">
+        <!-- header.html 파일에 내용이 들어오는 영역 -->
+    </div>
+
+    <main>
+        <!-- 히어로 배너 슬라이드, class 이름 정해주기, swiper js -->
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img class='pc' src="./img/main-01-pc.png" alt="shop collection">
+                    <img class='pad' src="./img/main-01-pad.png" alt="shop collection">
+                    <img class='mo' src="./img/main-01-mo.png" alt="shop collection">
+                </div>
+                <div class="swiper-slide">
+                    <img class='pc' src="./img/main-02-pc.png" alt="view sale">
+                    <img class='pad' src="./img/main-02-pad.png" alt="view sale">
+                    <img class='mo' src="./img/main-02-mo.png" alt="view sale">
+                </div>
+                <div class="swiper-slide">
+                    <img class='pc' src="./img/main-03-pc.png" alt="explore now">
+                    <img class='pad' src="./img/main-03-pad.png" alt="explore now">
+                    <img class='mo' src="./img/main-03-mo.png" alt="explore now">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <script>
+            const station = new Swiper('.hero-slider', {
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                speed: 1000,
+            });
+        </script>
+
+        <div class="banner-line">
+            <div class="common-frame">
+                <span>NOTICE</span>
+                <h4>HOMFIT의 새로운 소식을 확인해보세요</h4>
+                <p>지금 알아두면 좋은 공지사항과 브랜드 소식을 만나보세요</p>
+                <a href="#" class="btn-style">
+                    VIEW NOTICE
+                    <img src="./img/stash_arrow-right-light.svg" alt="공지사항 바로가기">
+                </a>
+            </div>
+        </div>
+
+        <section class="con1">
+            <div class="common-frame">
+                <div class="title">
+                    <h1>집, 가장 나다운 곳</h1>
+                    <span></span>
+                    <p>나의 취향과 일상을 담은 HOMFIT의 공간을 둘러보세요.</p>
+                </div>
+
+                <div class="swiper cardlist-wrap">
+                    <ul class="cardlist swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="cover">LIVING ROOM</div>
+                                <img src="./img/con1-1.jpg" alt="living room">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="cover">DINING ROOM</div>
+                                <img src="./img/con1-2.jpg" alt="DINING ROOM">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="cover">KITCHEN</div>
+                                <img src="./img/con1-3.jpg" alt="KITCHEN">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="cover">BEDROOM</div>
+                                <img src="./img/con1-4.jpg" alt="BEDROOM">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <script>
+                    const cardlist = new Swiper('.cardlist-wrap', {
+                        breakpoints: {
+                            0: {
+                                slidesPerView: 1.2,
+                                spaceBetween: 12,
+                            },
+                            340: {
+                                slidesPerView: 2.2,
+                                spaceBetween: 12,
+                            },
+
+                            768: {
+                                slidesPerView: 3.2,
+                                spaceBetween: 14,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 16,
+                            },
+                        },
+                        autoplay: {
+                            delay: 3000
+                        },
+                    });
+                </script>
+
+            </div>
+        </section>
+
+        <section class="con2">
+            <div class="common-frame">
+                <div class="title">
+                    <h1>나만의 취향으로 채운 따뜻한 공간</h1>
+                </div>
+                <div class="swiper review-story-wrap">
+                    <ul class="review-story swiper-wrapper">
+                        <li class="swiper-slide">
+                            <figure>
+                                <img src="./img/c2-1.jpg" alt="정민님의 공간 섬네일">
+                            </figure>
+                            <div class="story-txt">
+                                <div class="stars">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                </div>
+                                <h4>정민님의 공간</h4>
+                                <p>집에 들어오자마자 편하게 쉴 수 있는 거실을 만들고 싶었는데, 공간을 많이 차지하지 않으면서도 분위기를 살려줘서 만족스러워요.</p>
+                            </div>
+                            <div class="story-product">
+                                <a href="#">
+                                    <figure>
+                                        <span class="like-badge"><img src="./img/heart-1.svg" alt="좋아요하트">70</span>
+                                        <img src="./img/c2-1-1.jpg" alt="오브니 패브릭 3인 소파">
+                                    </figure>
+                                    <div class="story-product-txt">
+                                        <div class="product-name">
+                                            오브니 패브릭 3인 소파
+                                        </div>
+                                        <div class="product-category">
+                                            가구 · 소파
+                                        </div>
+                                        <div class="pay-original">
+                                            <span>1,490,000</span>원
+                                        </div>
+                                        <div class="pay-discount">
+                                            <div class="discount">10%</div>
+                                            <div class="pay"><b>1,341,000</b>원</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <img src="./img/c2-2.jpg" alt="서현님의 공간 섬네일">
+                            </figure>
+                            <div class="story-txt">
+                                <div class="stars">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                </div>
+                                <h4>서현님의 공간</h4>
+                                <p>혼자 밥을 먹을 때도 분위기를 내고 싶어서 골랐어요. 크기가 부담스럽지 않고 식사나 작업할 때 모두 활용하기 좋아요.</p>
+                            </div>
+                            <div class="story-product">
+                                <a href="#">
+                                    <figure>
+                                        <span class="like-badge"><img src="./img/heart-1.svg" alt="좋아요하트">91</span>
+                                        <img src="./img/c2-1-2.jpg" alt="모노 원형 다이닝 테이블">
+                                    </figure>
+                                    <div class="story-product-txt">
+                                        <div class="product-name">
+                                            모노 원형 다이닝 테이블
+                                        </div>
+                                        <div class="product-category">
+                                            가구 · 테이블
+                                        </div>
+                                        <div class="pay-original">
+                                            <span>589,000</span>원
+                                        </div>
+                                        <div class="pay-discount">
+                                            <div class="discount">10%</div>
+                                            <div class="pay"><b>530,100</b>원</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <img src="./img/c2-3.jpg" alt="지윤님의 공간 섬네일">
+                            </figure>
+                            <div class="story-txt">
+                                <div class="stars">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                </div>
+                                <h4>지윤님의 공간</h4>
+                                <p>침실은 최대한 편안하고 따뜻한 느낌으로 꾸미고 싶었어요. 군더더기 없는 디자인이라 침구와도 잘 어울리고 방이 훨씬 아늑해졌어요.</p>
+                            </div>
+                            <div class="story-product">
+                                <a href="#">
+                                    <figure>
+                                        <span class="like-badge"><img src="./img/heart-1.svg" alt="좋아요하트">80</span>
+                                        <img src="./img/c2-1-3.jpg" alt="포근 패브릭 침대 프레임">
+                                    </figure>
+                                    <div class="story-product-txt">
+                                        <div class="product-name">
+                                            포근 패브릭 침대 프레임
+                                        </div>
+                                        <div class="product-category">
+                                            가구 · 침대
+                                        </div>
+                                        <div class="pay-original">
+                                            <span>890,000</span>원
+                                        </div>
+                                        <div class="pay-discount">
+                                            <div class="discount">10%</div>
+                                            <div class="pay"><b>801,000</b>원</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <img src="./img/c2-4.jpg" alt="윤일님의 공간 섬네일">
+                            </figure>
+                            <div class="story-txt">
+                                <div class="stars">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                </div>
+                                <h4>윤일님의 공간</h4>
+                                <p>주방에 물건이 많아서 깔끔하게 정리하고 싶었는데 필요한 것들을 가까이에 둘 수 있어서 정말 편해요. 디자인도 심플해서 공간을 해치지 않아요.</p>
+                            </div>
+                            <div class="story-product">
+                                <a href="#">
+                                    <figure>
+                                        <span class="like-badge"><img src="./img/heart-1.svg" alt="좋아요하트">36</span>
+                                        <img src="./img/c2-1-4.jpg" alt="리브 키친 수납 트롤리">
+                                    </figure>
+                                    <div class="story-product-txt">
+                                        <div class="product-name">
+                                            리브 키친 수납 트롤리
+                                        </div>
+                                        <div class="product-category">
+                                            주방 · 주방수납
+                                        </div>
+                                        <div class="pay-original">
+                                            <span>179,000</span>원
+                                        </div>
+                                        <div class="pay-discount">
+                                            <div class="discount">10%</div>
+                                            <div class="pay"><b>161,100</b>원</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <script>
+                    const reviewStory = new Swiper('.review-story-wrap', {
+                        breakpoints: {
+                            0: {
+                                slidesPerView: 1.2,
+                                spaceBetween: 12,
+                            },
+                            340: {
+                                slidesPerView: 2.2,
+                                spaceBetween: 12,
+                            },
+
+                            768: {
+                                slidesPerView: 3.2,
+                                spaceBetween: 14,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 16,
+                            },
+                        },
+                    })
+                </script>
+            </div>
+        </section>
+
+        <section class="con3">
+            <div class="common-frame">
+                <div class="title">
+                    <h1>이번 달의 베스트 셀렉션</h1>
+                    <span></span>
+                    <p>고객들이 가장 많이 선택한 인기 가구들만 엄선했습니다.</p>
+                </div>
+                <ul class="sale grid-list">
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/month1.jpg" alt="베스트1번">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4 class="title-1">오브 패브릭 암체어</h4>
+                                <p class="desc-1">부드러운 패브릭과 안정감 있는 곡선 디자인으로 어떤 공간에서도 편안한 휴식을 선사합니다.</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>589,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount">10%</div>
+                                        <div class="pay"><b>530,100</b>원</div>
+                                    </div>
+                                </div>
+                                <span class="like-badge noab"><img src="./img/heart-1.svg" alt="좋아요하트">80</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/month1.jpg" alt="베스트1번">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4>오브 패브릭 암체어</h4>
+                                <p>부드러운 패브릭과 안정감 있는 곡선 디자인으로 어떤 공간에서도 편안한 휴식을 선사합니다.</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>589,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount">10%</div>
+                                        <div class="pay"><b>530,100</b>원</div>
+                                    </div>
+                                </div>
+                                <span class="like-badge"><img src="./img/heart-1.svg" alt="좋아요하트">80</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/month1.jpg" alt="베스트1번">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4>오브 패브릭 암체어</h4>
+                                <p>부드러운 패브릭과 안정감 있는 곡선 디자인으로 어떤 공간에서도 편안한 휴식을 선사합니다.</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>589,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount">10%</div>
+                                        <div class="pay"><b>530,100</b>원</div>
+                                    </div>
+                                </div>
+                                <span class="like-badge"><img src="./img/heart-1.svg" alt="좋아요하트">80</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/month1.jpg" alt="베스트1번">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4>오브 패브릭 암체어</h4>
+                                <p>부드러운 패브릭과 안정감 있는 곡선 디자인으로 어떤 공간에서도 편안한 휴식을 선사합니다.</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>589,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount">10%</div>
+                                        <div class="pay"><b>530,100</b>원</div>
+                                    </div>
+                                </div>
+                                <span class="like-badge"><img src="./img/heart-1.svg" alt="좋아요하트">80</span>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+            </div>
+        </section>
+    </main>
+
+<div id='footer-wrap'>
+    <!-- footer.html 파일의 내용이 들어오는 영역 -->
+</div>
+
+
+
+
+
+</body>
+
+</html>

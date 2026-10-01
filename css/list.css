@@ -1,0 +1,8 @@
+.hero-banner{
+    line-height:0;
+}
+
+.hero-banner img{
+    width:100%;
+    /* mo 이미지는 width 768로 제작하는게 좋음, 화질 깨짐 문제(비율은 402/?로 제작) */
+}
